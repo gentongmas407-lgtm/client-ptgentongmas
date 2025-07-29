@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT. Gentong Mas Jaya Buana | Under Construction</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    // Contoh animasi simple dengan JS
+    window.addEventListener("DOMContentLoaded", () => {
+      const dots = document.querySelector("#loading-dots");
+      let count = 0;
+      setInterval(() => {
+        count = (count + 1) % 4;
+        dots.textContent = ".".repeat(count);
+      }, 500);
+    });
+  </script>
+</head>
+<body class="bg-yellow-50 text-gray-800 flex items-center justify-center min-h-screen p-6">
+  <div class="max-w-xl text-center">
+    <img src="https://img.icons8.com/emoji/96/000000/construction-emoji.png" alt="Construction Icon" class="mx-auto mb-6">
+    <h1 class="text-3xl md:text-4xl font-bold text-yellow-800 mb-4">Situs Sedang Dalam Pengembangan</h1>
+    <p class="text-lg md:text-xl mb-6 text-gray-700">
+      Website <strong>PT. Gentong Mas Jaya Buana</strong> sedang dalam tahap pembangunan. 
+      Kami akan segera hadir dengan informasi dan layanan terbaik.
+    </p>
+    <p class="text-sm mb-8 text-gray-500">
+      Mohon ditunggu<span id="loading-dots">.</span>
+    </p>
+    <div class="flex justify-center gap-4">
+      
+      <a href="https://www.google.com/maps?q=Pondok+Pesantren+Sadang+Lebak,+Garut" target="_blank" class="px-4 py-2 border border-yellow-600 text-yellow-600 rounded hover:bg-yellow-600 hover:text-white transition">
+        Lokasi Kami
+      </a>
+    </div>
+  </div>
+</body>
+</html>
