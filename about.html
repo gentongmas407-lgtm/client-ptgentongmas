@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentong Mas Company - Obat Herbal Tradisional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green-light': '#f0f5e8',
+                        'brand-green': '#5f7c3b',
+                        'brand-green-dark': '#3a4c1c',
+                        'brand-green-nav': '#4a652a',
+                        'brand-brown': '#8c2c13',
+                        'brand-text': '#444',
+                    },
+                    fontFamily: {
+                        'sans': ['Lato', 'sans-serif'],
+                        'serif': ['Merriweather', 'serif'],
+                    },
+                     backgroundImage: {
+                        'texture-paper': "url('https://www.transparenttextures.com/patterns/crissxcross.png')",
+                        'texture-dark': "url('https://www.transparenttextures.com/patterns/natural-paper.png')"
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #e9ede4;
+            background-image: url('https://www.transparenttextures.com/patterns/subtle-zebra-3d.png');
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-text">
+     <div class="max-w-6xl mx-auto bg-white shadow-2xl">
+
+        <!-- Top Bar -->
+        <header class="bg-brand-green-dark text-white p-2 text-xs">
+            <div class="container mx-auto flex flex-wrap justify-between items-center gap-2">
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="hover:text-yellow-300">Beranda</a>
+                    <a href="#" class="hover:text-yellow-300">Tentang Kami</a>
+                    <a href="#" class="hover:text-yellow-300">Hubungi Kami</a>
+                </div>
+                <div class="flex items-center space-x-4 flex-wrap gap-2">
+                    <!-- <form class="flex">
+                        <input type="text" placeholder="Cari produk..." class="px-2 py-1 text-xs text-gray-800 rounded-l-sm focus:outline-none w-32">
+                        <button class="bg-brand-brown text-white px-2 py-1 rounded-r-sm" aria-label="Search">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </form> -->
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Logo & Tagline -->
+        <div class="py-4 px-4 sm:px-8 bg-brand-green-light bg-texture-paper flex justify-between items-center border-b-4 border-brand-green">
+             <div class="flex items-center">
+                <img src="/gentongmas-images/gentongmas-logo-6888490b59da0.webp?token=GHSAT0AAAAAADA4C6BXH2UXROPKKT6CM4K22EIKH5Q" alt="Logo Daun Gentong Mas" class="w-16 mr-4"/>
+                <div>
+                    <h1 class="font-serif text-3xl md:text-4xl font-bold text-brand-green-dark">GENTONG MAS</h1>
+                    <p class="text-gray-600 text-sm">Sejak 1910</p>
+                </div>
+            </div>
+            <div class="hidden sm:block text-right">
+                <img src="https://placehold.co/100x80/8c2c13/FFFFFF?text=Produk+Herbal" alt="Produk herbal" class="inline-block rounded">
+            </div>
+        </div>
+
+        <!-- Navigasi -->
+        <nav class="relative bg-brand-green-nav text-white font-bold">
+            <div class="container mx-auto flex justify-between items-center px-4">
+                <ul id="menu-items" class="hidden lg:flex flex-1 justify-center">
+                    <li><a href="about.html" class="block px-4 py-3 hover:bg-brand-green text-sm">TENTANG KAMI</a></li>
+                    <li><a href="#" class="block px-4 py-3 hover:bg-brand-green text-sm">PRODUK</a></li>
+                    <li><a href="#" class="block px-4 py-3 hover:bg-brand-green text-sm">OUTLET</a></li>
+                    <li><a href="#" class="block px-4 py-3 hover:bg-brand-green text-sm">INFO KESEHATAN</a></li>
+                </ul>
+                <button id="menu-btn" class="lg:hidden ml-auto p-3 text-white focus:outline-none" aria-label="Open menu">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Menu Mobile -->
+            <div id="mobile-menu" class="hidden lg:hidden bg-brand-green-nav">
+                <ul class="flex flex-col items-start">
+                    <li><a href="about.html" class="block px-4 py-3 hover:bg-brand-green text-sm">TENTANG KAMI</a></li>
+                    <li><a href="#" class="block px-4 py-3 hover:bg-brand-green text-sm">PRODUK</a></li>
+                    <li><a href="#" class="block px-4 py-3 hover:bg-brand-green text-sm">OUTLET</a></li>
+                    <li><a href="#" class="block px-4 py-3 hover:bg-brand-green text-sm">INFO KESEHATAN</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Banner Utama -->
+        <div class="relative" id="slider-container">
+            <div class="slide"><img src="/gentongmas-images/produk/gentongmas(1).jpg" alt="Banner Produk Jamu" class="w-full object-cover h-9/10"></div>
+            <div class="slide hidden"><img src="/gentongmas-images/produk/gentongmas(3).jpg" alt="Banner Hidup Sehat" class="w-full object-cover h-9/10"></div>
+            <div class="slide hidden"><img src="/gentongmas-images/produk/gentongmas(1).jpg" alt="Banner Bahan Alami" class="w-full object-cover h-9/10"></div>
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2" id="slider-dots"></div>
+        </div>
+        
+        <!-- Konten Utama -->
+        <main class="p-4 sm:p-8  gap-8 bg-yellow-50">
+            <section class="bg-white py-12 px-4 md:px-8">
+            <div class="max-w-4xl mx-auto text-gray-800">
+                <h2 class="text-3xl font-bold text-brand-green mb-6">Gentong Mas: Minuman Herbal dari Pesantren Mandiri</h2>
+
+                <p class="mb-4">
+                <strong>Ponpes Sadang Lebak</strong> yang terletak di Kampung Sadang Lebak, Desa Situsari, Kecamatan Karangpawitan, Garut, telah memproduksi minuman herbal <strong>Gentong Mas</strong> sejak tahun 2003. Berbahan dasar <em>gula merah</em> dan <em>jintan hitam (habbatussauda)</em>, Gentong Mas dikenal bermanfaat untuk menjaga kesehatan dan membantu mencegah berbagai penyakit.
+                </p>
+
+                
+
+                <blockquote class="border-l-4 border-brand-green pl-4 italic text-gray-700 mb-4">
+                “Saya membuat pabrik ini untuk membantu orang-orang tidak mampu agar bisa mengaji di pesantren kami. Santri di sini gratis, termasuk listrik, makan, dan biaya kesehatan,”
+                <br>— KH. Aceng Hasan, Pengasuh Ponpes Sadang Lebak
+                </blockquote>
+
+                <p class="mb-4">
+                Usaha Gentong Mas yang dikelola oleh <strong>PT Gentong Mas</strong> telah menjangkau seluruh Indonesia, termasuk segmen apotek.
+                </p>
+
+                <p class="mb-4">
+                Gentong Mas juga telah mengantongi izin edar dari BPOM dan sertifikat halal dari MUI. Produk ini tidak mengandung bahan pengawet dan masa kedaluwarsanya bisa mencapai dua tahun.
+                </p>
+
+                <p class="mb-4">
+                Bahan baku seperti gula aren, habbatussauda, lada hitam, kapol, kayu manis, dan bunga lawang diperoleh dari petani lokal Garut, sekaligus turut memberdayakan ekonomi sekitar.
+                </p>
+
+                <div class="bg-gray-50 p-4 rounded-lg shadow mb-6">
+                <p class="font-semibold text-gray-700 mb-2">Khasiat Gentong Mas antara lain:</p>
+                <ul class="list-disc list-inside text-sm text-gray-700">
+                    <li>Meningkatkan daya tahan tubuh</li>
+                    <li>Membantu mengatasi diabetes, mag, asam urat, dan reumatik</li>
+                    <li>Menurunkan kolesterol tinggi</li>
+                    <li>Meningkatkan kesehatan pencernaan dan sistem imun</li>
+                </ul>
+                </div>
+
+                <p class="mb-4">
+                Keunggulan Gentong Mas menarik perhatian <strong>Atalia Praratya Ridwan Kamil</strong>, Ketua Dekranasda Jawa Barat. Dalam kunjungannya ke pabrik Gentong Mas pada 24 Desember 2020, ia mengapresiasi kemandirian ekonomi pesantren Sadang Lebak.
+                </p>
+
+                <blockquote class="border-l-4 border-brand-green pl-4 italic text-gray-700 mb-4">
+                “Pesantren ini tidak mengandalkan bantuan luar, tapi membangun kemandirian melalui usaha nyata seperti Gentong Mas. Ini bisa jadi contoh pesantren ekonomi mandiri di Jawa Barat,”
+                <br>— Atalia Praratya, Ketua Dekranasda Jabar
+                </blockquote>
+
+                <p>
+                Dengan dukungan Dekranasda dan pemerintah daerah, produk Gentong Mas diharapkan dapat menjangkau pasar yang lebih luas dan menjadi simbol keberhasilan pesantren berbasis kemandirian ekonomi dan inovasi herbal nusantara.
+                </p>
+            </div>
+            </section>
+
+
+        </main>
+        
+        <!-- Newsletter Subscription -->
+        <section class="bg-brand-green-dark text-white p-8 bg-texture-dark">
+            <div class="text-center">
+                <h2 class="font-serif text-2xl font-bold mb-2">SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <p class="mb-6 max-w-2xl mx-auto text-gray-300">Get updates on promotional info, health tips, events & more.</p>
+                <form class="flex flex-col sm:flex-row justify-center gap-2 sm:gap-0">
+                    <input type="email" placeholder="Your E-mail address..." class="px-4 py-2 w-full sm:w-1/2 max-w-sm text-gray-800 sm:rounded-l-md focus:outline-none" required>
+                    <button class="bg-brand-brown text-white font-bold px-6 py-2 sm:rounded-r-md hover:bg-opacity-90 transition-colors">SUBSCRIBE</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-black text-center text-gray-400 text-sm py-4">
+            <p>Copyright &copy; 2025 PT. Gentong Mas Jaya. All Rights Reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="carousel-testimoni.js"></script>
+</body>
+</html>
