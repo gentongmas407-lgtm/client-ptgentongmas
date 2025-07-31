@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gentong Mas Company - Obat Herbal Tradisional</title>
+    <title>Gentong Mas - Minuman Herbal Tradisional</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
@@ -19,6 +19,7 @@
                         'brand-green-nav': '#4a652a',
                         'brand-brown': '#8c2c13',
                         'brand-text': '#444',
+                        'brand-gold': 'linear-gradient(to right, #e6cb49, #a66710, #653c00)'
                     },
                     fontFamily: {
                         'sans': ['Lato', 'sans-serif'],
@@ -26,7 +27,8 @@
                     },
                      backgroundImage: {
                         'texture-paper': "url('https://www.transparenttextures.com/patterns/crissxcross.png')",
-                        'texture-dark': "url('https://www.transparenttextures.com/patterns/natural-paper.png')"
+                        'texture-dark': "url('https://www.transparenttextures.com/patterns/natural-paper.png')",
+                        'gold-gradient': 'linear-gradient(to right, #e6cb49, #a66710, #653c00)'
                     }
                 }
             }
@@ -47,7 +49,7 @@
         <header class="bg-brand-green-dark text-white p-2 text-xs">
             <div class="container mx-auto flex flex-wrap justify-between items-center gap-2">
                 <div class="flex items-center space-x-4">
-                    <a href="#" class="hover:text-yellow-300">Beranda</a>
+                    <a href="index.html" class="hover:text-yellow-300">Beranda</a>
                     <a href="about.html" class="hover:text-yellow-300">Tentang Kami</a>
                     <a href="#" class="hover:text-yellow-300">Hubungi Kami</a>
                 </div>
@@ -68,22 +70,23 @@
         <!-- Logo & Tagline -->
         <div class="py-4 px-4 sm:px-8 bg-brand-green-light bg-texture-paper flex justify-between items-center border-b-4 border-brand-green">
              <div class="flex items-center">
-                <img src="/gentongmas-images/gentongmas2-2.png" alt="Logo Daun Gentong Mas" class="w-32 mr-4"/>
+                <img src="/gentongmas-images/gentongmas2-2.png" alt="Logo Daun Gentong Mas" class="w-32 "/>
                 <div>
                     <h1 class="font-serif text-3xl md:text-4xl font-bold text-brand-green-dark">GENTONG MAS</h1>
-                    <p class="text-gray-600 text-sm">Sejak 1910</p>
+                    <p class="text-[#6D7A88] text-lg">PT. Gentong Mas Jaya Buana</p>
                 </div>
             </div>
             <div class="hidden sm:block text-right">
-                <img src="https://placehold.co/100x80/8c2c13/FFFFFF?text=Produk+Herbal" alt="Produk herbal" class="inline-block rounded">
+                <img src="/gentongmas-images/logo-sertifikasi-gentongmas.webp" alt="Produk herbal" class="inline-block rounded w-64 mb-5">
             </div>
         </div>
 
         <!-- Navigasi -->
-        <nav class="relative bg-brand-green-nav text-white font-bold">
-            <div class="container mx-auto flex justify-between items-center px-4">
+        <nav class="relative bg-gold-gradient text-white font-bold">
+            <div class="container mx-auto flex justify-between items-center px-4 md:py-3">
                 <ul id="menu-items" class="hidden lg:flex flex-1 justify-center">
                     <li><a href="about.html" class="block px-4 py-3 hover:bg-brand-green text-sm">TENTANG KAMI</a></li>
+                    <li><a href="tim-kami.html" class="block px-4 py-3 hover:bg-brand-green text-sm">TIM KAMI</a></li>
                     <li><a href="#" class="block px-4 py-3 hover:bg-brand-green text-sm">PRODUK</a></li>
                     <li><a href="#" class="block px-4 py-3 hover:bg-brand-green text-sm">OUTLET</a></li>
                     <li><a href="#" class="block px-4 py-3 hover:bg-brand-green text-sm">INFO KESEHATAN</a></li>
@@ -98,6 +101,7 @@
             <div id="mobile-menu" class="hidden lg:hidden bg-brand-green-nav">
                 <ul class="flex flex-col items-start">
                     <li><a href="about.html" class="block px-4 py-3 hover:bg-brand-green text-sm">TENTANG KAMI</a></li>
+                    <li><a href="tim-kami.html" class="block px-4 py-3 hover:bg-brand-green text-sm">TIM KAMI</a></li>
                     <li><a href="#" class="block px-4 py-3 hover:bg-brand-green text-sm">PRODUK</a></li>
                     <li><a href="#" class="block px-4 py-3 hover:bg-brand-green text-sm">OUTLET</a></li>
                     <li><a href="#" class="block px-4 py-3 hover:bg-brand-green text-sm">INFO KESEHATAN</a></li>
@@ -190,9 +194,12 @@
                 <div class="bg-brand-green-light p-4 rounded-md border border-gray-200 mb-6">
                     <h3 class="font-serif font-bold text-brand-green-dark border-b pb-2 mb-4 flex items-center">
                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor"><path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v2a2 2 0 01-2 2H7a2 2 0 01-2-2V4zm11.707 6.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H5a1 1 0 110-2h9.586l-2.293-2.293a1 1 0 011.414-1.414l4 4z" clip-rule="evenodd" /></svg>
-                        Promosi
+                        Produk
                     </h3>
-                    <img src="https://placehold.co/300x150/344e41/FFFFFF?text=Tawaran+Spesial" alt="Promosi" class="w-full rounded shadow">
+                    <img src="/gentongmas-images/produk/gentongmas-box.png" alt="Promosi" class="w-full h-96 object-cover rounded shadow">
+                    <div class="flex items-center justify-center mt-3">
+                        <a href="https://wa.me/+6282126238805" class="py-1.5 px-4 text-white bg-brand-brown rounded-md shadow-lg hover:bg-opacity-90 transition-colors font-semibold">BELI SEKARANG</a>
+                    </div>
                 </div>
                 
                 <div class="bg-brand-green-light p-4 rounded-md border border-gray-200 mb-6">
@@ -245,8 +252,12 @@
         </section> -->
 
         <!-- Footer -->
-        <footer class="bg-black text-center text-gray-400 text-sm py-4">
-            <p>Copyright &copy; 2025 PT. Gentong Mas Jaya. All Rights Reserved.</p>
+        <footer class="bg-gray-800 text-center text-gray-400 text-sm py-4">
+            <div class="my-10 px-10">
+                <img src="/gentongmas-images/logo-sertifikasi-gentongmas.webp" alt="Produk herbal" class="inline-block rounded w-96">
+            </div>
+            <p>Copyright &copy; 2025 PT. Gentong Mas Jaya Buana. <br> All Rights Reserved.</p>
+
         </footer>
     </div>
     
