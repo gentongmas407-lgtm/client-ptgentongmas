@@ -7,8 +7,11 @@
     <link rel="icon" type="image/x-icon" href="/gentongmas-images/gentongmas2-2.png">
     <link rel="apple-touch-icon" href="/gentongmas-images/gentongmas2-2.png">
     <title>Gentong Mas - Tentang Kami</title>
+   <link rel="icon" type="image/x-icon" href="/gentongmas-images/gentongmas2-2.png">
+    <link rel="apple-touch-icon" href="/gentongmas-images/gentongmas2-2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Patua+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <link
   rel="stylesheet"
@@ -34,6 +37,8 @@
                     fontFamily: {
                         'sans': ['Lato', 'sans-serif'],
                         'serif': ['Merriweather', 'serif'],
+                        'script': ['Berkshire Swash', 'cursive'],
+                        'title': ['Patua One', 'cursive']
                     },
                      backgroundImage: {
                         'texture-paper': "url('https://www.transparenttextures.com/patterns/crissxcross.png')",
@@ -52,7 +57,8 @@
     </style>
 </head>
 <body class="font-sans text-brand-text">
-     <div class="max-w-6xl mx-auto shadow-2xl">
+
+    <div class="max-w-6xl mx-auto shadow-2xl">
 
         <!-- Top Bar -->
         <header class="bg-brand-green-dark text-white p-2 text-xs">
@@ -62,16 +68,27 @@
                     <a href="about.html" class="hover:text-yellow-300">Tentang Kami</a>
                     <a href="#" class="hover:text-yellow-300">Hubungi Kami</a>
                 </div>
+                <div class="flex items-center space-x-4 flex-wrap gap-2">
+                    <!-- <form class="flex">
+                        <input type="text" placeholder="Cari produk..." class="px-2 py-1 text-xs text-gray-800 rounded-l-sm focus:outline-none w-32">
+                        <button class="bg-brand-brown text-white px-2 py-1 rounded-r-sm" aria-label="Search">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </form> -->
+                    
+                </div>
             </div>
         </header>
 
         <!-- Logo & Tagline -->
-        <div class="py-4 px-4 sm:px-8 bg-brand-green-light bg-texture-paper flex justify-between items-center border-b-4 border-brand-green">
+        <div class="py-4  sm:px-8 bg-brand-green-light bg-texture-paper flex justify-between items-center border-b-4 border-brand-green">
              <div class="flex items-center">
-                <img src="/gentongmas-images/gentongmas2-2.png" alt="Logo Daun Gentong Mas" class="w-32 "/>
+                <img src="/gentongmas-images/gentongmas2-2.png" alt="Logo Daun Gentong Mas" class="md:w-32 w-24"/>
                 <div>
-                    <h1 class="font-serif text-3xl md:text-4xl font-bold text-brand-green-dark">GENTONG MAS</h1>
-                    <p class="text-[#6D7A88] text-lg">PT. Gentong Mas Jaya Buana</p>
+                    <h1 class="font-title text-lg md:text-4xl text-brand-green-dark">GENTONG MAS JAYA BUANA</h1>
+                    <p class="text-sm md:text-2xl italic font-script">Dari Tanah Garut untuk Kebaikan Indonesia</p>
                 </div>
             </div>
             <div class="hidden sm:block text-right">
@@ -170,15 +187,15 @@
         </main>
         
         <!-- Footer -->
-        <footer class="bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')] bg-gray-900 text-gray-300 text-sm mt-12">
+        <footer class="bg-brand-green-dark text-gray-300 text-sm mt-12">
   <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
     
     <!-- Logo & Info -->
     <div class="flex flex-col items-center md:items-start">
       <img src="/gentongmas-images/logo-sertifikasi-gentongmas.webp" alt="Produk herbal"
         class="rounded w-72 grayscale hover:grayscale-0 transition duration-300 mb-4">
-      <p class="text-gray-400 text-xs">&copy; 2025 PT. Gentong Mas Jaya Buana</p>
-      <p class="text-gray-500 text-xs">All Rights Reserved.</p>
+      <p class="text-gray-200 mt-4">&copy; 2025 PT. Gentong Mas Jaya Buana</p>
+      <p class="text-gray-300 text-xs">All Rights Reserved.</p>
     </div>
 
     <!-- Navigation (optional) -->
@@ -195,7 +212,7 @@
     <div>
       <h3 class="text-white text-base font-semibold mb-3">Follow Us</h3>
       <div class="flex justify-center md:justify-start space-x-4 text-xl">
-        <a href="https://www.facebook.com/profile.php?id=61564176320117&mibextid=LQQJ4d" class="text-white hover:text-gray-300 transition duration-300">
+        <a href="https://www.facebook.com/people/Gentong-Mas-Official/61564176320117/?mibextid=LQQJ4d" class="text-white hover:text-gray-300 transition duration-300">
               <span class="sr-only">Facebook</span>
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
