@@ -38,7 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
             if(index < 0) index = slides.length - 1;
 
             slides.forEach((slide, i) => {
-                slide.classList.toggle('hidden', i !== index);
+                slide.classList.toggle('opacity-100', i !== index);
+                slide.classList.toggle('opacity-0', i !== index);
             });
             dots.forEach((dot, i) => {
                 dot.classList.toggle('opacity-100', i === index);
